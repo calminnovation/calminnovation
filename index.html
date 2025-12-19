@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Innovation | Privacy First & Agentic AI</title>
+    <meta name="description"
+        content="Calm Innovation focuses on privacy-based mobile apps and Agentic AI systems. Discover Upkeep, our premium habit tracking application.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+    <header class="glass-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Calm Innovation Logo" width="32" height="32">
+                <span>Calm Innovation</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#upkeep">Upkeep</a></li>
+                <!-- Future links
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#about">About</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="fade-in-up">Privacy based mobile apps & <br><span class="gradient-text">Agentic AI
+                        systems</span></h1>
+                <p class="fade-in-up delay-1">Creating technology that respects your attention and your data.</p>
+                <div class="hero-actions fade-in-up delay-2">
+                    <a href="#upkeep" class="btn btn-primary">Discover Upkeep</a>
+                </div>
+            </div>
+            <div class="hero-background-glow"></div>
+        </section>
+
+        <section id="upkeep" class="product-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">New Release</span>
+                    <h2>Upkeep</h2>
+                    <p class="subtitle">A premium, private-by-design habit tracker.</p>
+                </div>
+
+                <div class="philosophy-grid">
+                    <div class="card philosophy-card">
+                        <div class="icon">🔒</div>
+                        <h3>Privacy First</h3>
+                        <p>Completely offline-first. Your data never leaves your device. No analytics, no tracking.</p>
+                    </div>
+                    <div class="card philosophy-card">
+                        <div class="icon">✨</div>
+                        <h3>Zen Aesthetics</h3>
+                        <p>Designed with visual excellence and micro-animations for a calm, premium experience.</p>
+                    </div>
+                    <div class="card philosophy-card">
+                        <div class="icon">🛡️</div>
+                        <h3>Data Sovereignty</h3>
+                        <p>You own your data. Export your entire history to JSON or import it back at any time.</p>
+                    </div>
+                </div>
+
+                <div class="features-wrapper">
+                    <div class="feature-block">
+                        <h3>🛠️ Smart Tracking</h3>
+                        <ul class="feature-list">
+                            <li><strong>Boolean:</strong> Simple yes/no tracking for binary habits.</li>
+                            <li><strong>Numeric:</strong> Track counts, weights, or distances with custom units.</li>
+                            <li><strong>Checklist:</strong> Break down complex habits into sub-tasks.</li>
+                            <li><strong>Timer:</strong> Track duration-based activities with a focus timer.</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-block">
+                        <h3>📊 Deep Insights</h3>
+                        <ul class="feature-list">
+                            <li><strong>Life Balance:</strong> Radar charts for category distribution.</li>
+                            <li><strong>Heatmap:</strong> GitHub-style consistency visualization.</li>
+                            <li><strong>Trends:</strong> Interactive time-series charts.</li>
+                            <li><strong>Streaks:</strong> Celebrate consistency with hall of fame.</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-block">
+                        <h3>🎨 Customization</h3>
+                        <ul class="feature-list">
+                            <li><strong>15+ Categories:</strong> From Mindfulness to Finance.</li>
+                            <li><strong>Zen Themes:</strong> Curated color schemes for focus.</li>
+                            <li><strong>Flexible Reminders:</strong> Precise notifications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-stack-section">
+                    <h3>Built with Modern Tech</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Jetpack Compose</span>
+                        <span class="tech-tag">Kotlin Coroutines</span>
+                        <span class="tech-tag">Room SQLite</span>
+                        <span class="tech-tag">Hilt</span>
+                        <span class="tech-tag">WorkManager</span>
+                        <span class="tech-tag">DataStore</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Join our journey</h2>
+                <p>More innovative, privacy-focused tools are coming soon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="Calm Innovation" width="24">
+                <span>Calm Innovation</span>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:calminnovation@gmail.com" class="contact-link">calminnovation@gmail.com</a>
+                <p>&copy; 2025 Calm Innovation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple intersection observer for fade-in animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.card, .feature-block, .tech-stack-section').forEach(el => {
+                el.classList.add('fade-in-section');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
