@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Upkeep by Calm Innovation</title>
+    <meta name="description"
+        content="Privacy Policy for Upkeep, a privacy-first, offline habit tracker by Calm Innovation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+    <header class="glass-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none;">
+                    <img src="assets/images/logo.png" alt="Calm Innovation Logo" width="32" height="32">
+                    <span>Calm Innovation</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#upkeep">Upkeep</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" style="min-height: 40vh; padding-top: var(--spacing-xl);">
+            <div class="container hero-content">
+                <h1 class="fade-in-up">Privacy Policy for <span class="gradient-text">Upkeep</span></h1>
+                <p class="fade-in-up delay-1">Effective Date: December 25, 2024</p>
+            </div>
+            <div class="hero-background-glow"></div>
+        </section>
+
+        <section class="container" style="padding-bottom: var(--spacing-xl);">
+            <div class="card fade-in-up delay-2" style="max-width: 800px; margin: 0 auto; color: var(--text-secondary);">
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Introduction</h3>
+                <p style="margin-bottom: var(--spacing-md);">
+                    At Calm Innovation, we believe your habits and personal growth data are private. 
+                    This Privacy Policy applies to the <strong>Upkeep</strong> mobile application (the "App").
+                    We built Upkeep to be <strong>offline-first</strong> and <strong>privacy-by-design</strong>.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Data Collection and Usage</h3>
+                <p style="margin-bottom: var(--spacing-sm);">
+                    <strong>We do not collect, store, or share your personal data.</strong>
+                </p>
+                <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: var(--spacing-md);">
+                    <li><strong>Offline Storage:</strong> All data you enter into Upkeep (habits, logs, notes) is stored locally on your device using an encrypted local database.</li>
+                    <li><strong>No Servers:</strong> We do not have servers that receive or process your habit data.</li>
+                    <li><strong>No Analytics:</strong> We do not use third-party analytics services to track your usage behavior.</li>
+                    <li><strong>No Accounts:</strong> You do not need to create an account to use Upkeep.</li>
+                </ul>
+
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Data Sovereignty & Backup</h3>
+                <p style="margin-bottom: var(--spacing-md);">
+                    Since your data is stored on your device, you are responsible for it. 
+                    Upkeep provides functionality to <strong>Export</strong> your data to a JSON file. 
+                    You can use this file to back up your data or transfer it to another device. 
+                    We cannot access or recover your data if you lose your device or uninstall the app without a backup.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Permissions</h3>
+                <p style="margin-bottom: var(--spacing-md);">
+                    The app may request the following permissions on your device:
+                    <br>
+                    <strong>Notifications:</strong> To send you reminders for your habits. These are scheduled locally on your device.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Children's Privacy</h3>
+                <p style="margin-bottom: var(--spacing-md);">
+                    Our Application does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Changes to This Privacy Policy</h3>
+                <p style="margin-bottom: var(--spacing-md);">
+                    We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. 
+                    We will notify you of any changes by posting the new Privacy Policy on this page.
+                </p>
+
+                <h3 style="color: var(--text-primary); margin-bottom: var(--spacing-sm);">Contact Us</h3>
+                <p>
+                    If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at 
+                    <a href="mailto:calminnovation@gmail.com" style="color: var(--accent-color);">calminnovation@gmail.com</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="Calm Innovation" width="24">
+                <span>Calm Innovation</span>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:calminnovation@gmail.com" class="contact-link">calminnovation@gmail.com</a>
+                <p>&copy; 2025 Calm Innovation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple intersection observer from index.html
+        document.addEventListener('DOMContentLoaded', () => {
+             const observerOptions = { threshold: 0.1 };
+             const observer = new IntersectionObserver((entries) => {
+                 entries.forEach(entry => {
+                     if (entry.isIntersecting) {
+                         entry.target.classList.add('visible');
+                     }
+                 });
+             }, observerOptions);
+
+             document.querySelectorAll('.fade-in-up').forEach(el => {
+                 observer.observe(el); // fade-in-up has animation by default, but keeping consistency if needed
+             });
+             // Add fade-in-up class items to be visible if they rely on JS adding a class (though css has animation immediately)
+             // The original script added .visible to .fade-in-section.
+             // Here we use fade-in-up which runs on load in CSS.
+        });
+    </script>
+</body>
+
+</html>
